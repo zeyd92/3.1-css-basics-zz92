@@ -3,67 +3,139 @@
 
 /* TODO 1: Basic Element Selectors */
 /* Style all paragraphs with color: #333 and font-size: 16px */
+p {
+    color: #333;
+    font-size: 16px;
+}
 
 
 /* Style all span elements with color: #888 and font-size: 14px */
+
+span{
+    color: #888;
+    font-size: 14px;
+}
 
 
 /* TODO 2: Class Selectors */
 /* Style usernames with class "username" to have color: #1877f2 and font-weight: bold */
 
+.username {
+    color: #1877f2;
+    font-weight: bold;
+}
+
 
 /* Style posts with class "blue-text" to have color: #4267B2 */
+
+.blue-text{
+    color: #4267B2;
+}
 
 
 /* Style posts with class "red-text" to have color: #e74c3c */
 
+.red-text{
+    color: #e74c3c;
+}
+
 
 /* Style highlighted posts with class "highlight" to have background-color: #f0f2f5 and padding: 15px */
+
+.highlight{
+    background-color: #f0f2f5;
+    padding: 15px;
+}
 
 
 /* TODO 3: ID Selectors */
 /* Style the featured user with id "featured-user" to have color: #42b883 and font-size: 18px */
+
+#featured-user {
+    color: #42b883;
+    font-size: 18px;
+}
 
 
 /* TODO 4: Specificity Battle */
 /* Create multiple rules for the bio with id "specificity-test" and class "winner" */
 /* Rule 1: Use element selector p to make color: #333 */
 
+p { color: #333; }
+
 
 /* Rule 2: Use class selector .winner to make color: #ff6b6b */
+
+.winner { color: #ff6b6b; }   
 
 
 /* Rule 3: Use ID selector #specificity-test to make color: #4ecdc4 */
 
+#specificity-test { color: #4ecdc4; } 
+
 
 /* Rule 4: Use element + class selector p.winner to make color: #95a5a6 */
+
+p.winner { color: #95a5a6; }
 
 
 /* TODO 5: !important Override */
 /* Use !important to override inline styles for class "important-test" */
 /* Make the color: #e67e22 !important */
 
+.important-test {
+    color: #e67e22 !important;
+}
+
 
 /* TODO 6: Descendant Selectors */
 /* Style messages inside elements with class "chat-container" to have color: #2c3e50 */
 
+.chat-container .message {
+    color: #2c3e50;
+}
+
 
 /* Style message times inside elements with class "chat-container" to have color: #7f8c8d and font-size: 12px */
+
+.chat-container .message-time {
+    color: #7f8c8d;
+    font-size: 12px;
+}
 
 
 /* TODO 7: Pseudo-classes */
 /* Style buttons with class "send-button" on hover to have background-color: #3b5998 and color: white */
 
+.send-button:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
 
 /* Style links with class "chat-link" on hover to have color: #1877f2 and text-decoration: none */
+
+.chat-link:hover {
+    color: #1877f2;
+    text-decoration: none;
+}
 
 
 /* TODO 8: Group Selectors */
 /* Style trending tags h4, h5, h6 with class "trending-tag" to have color: #8b9dc3 and font-family: Arial */
 
+h4.trending-tag, h5.trending-tag, h6.trending-tag {
+    color: #8b9dc3;
+    font-family: Arial;
+}
+
 
 /* TODO 9: Universal Selector */
 /* Use universal selector to add box-sizing: border-box to all elements */
+
+* {
+    box-sizing: border-box;
+}
 
 
 /* Basic Social Media Styling (Already completed for you) */
